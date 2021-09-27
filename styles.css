@@ -1,0 +1,42 @@
+.base {
+  background-color: gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.middle-container {
+  display: flex;
+}
+
+@media screen and (max-width: 450px) {
+  .middle-container {
+    display: block;
+  }
+
+  .base {
+    background-color: orange;
+  }
+}
+
+.aside {
+  flex: 1;
+  min-height: 400px;
+}
+
+.content {
+  flex: 3;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  min-height: 100px;
+}
+
+.image {
+  flex: 1 1 300px;
+  width: 300px;
+}
